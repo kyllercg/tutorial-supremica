@@ -24,6 +24,6 @@ Minitutorial sobre como usar o Supremica.
 
 ## Criando um autômato finito
 
-## Guardas e Ações no Supremica
+## Guardas e ações no Supremica
 
-## Autômato Finito Extendido no Supremica
+## Autômato finito extendido no Supremica
