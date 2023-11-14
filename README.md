@@ -60,7 +60,7 @@ O estado de algo pode ser uma variável e seus valores são mudadas pelas açõe
 2. **Crie um Autômato**.
    - Clique em `Create > New Automaton`
    - Digite o nome do autômato 
-   - Escolha o tipo (*Kind*) do aut[ô](https://i.imgur.com/VgZ4kda.jpg)mato como Planta (*Plant*).
+   - Escolha o tipo (*Kind*) do autômato como Planta (*Plant*)[.](https://i.imgur.com/VgZ4kda.jpg)
    - Clique em `OK`
 
 3. **Adicione estados e transições:**
