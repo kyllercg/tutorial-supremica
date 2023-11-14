@@ -31,7 +31,9 @@ Minitutorial sobre como usar o Supremica.
 4. Autômatos Finitos:\
    Método capaz de representar linguagens e lógicas, na forma de grafos, através de eventos e estados.
 
-   ![Automato](./Imagens/Automato.png "Autômato")
+   ![Automato](./Imagens/Automato.png)
+
+   ![Automato](Imagens/Automato.png)
 
    Os nós são os estados, enquanto que as setas representam os eventos. Em essência, um autômato é uma abstração matemática que descreve um sistema que passa de um estado para outro em resposta a um conjunto de regras.
    
