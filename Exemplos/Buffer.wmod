@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<Module xmlns="http://waters.sourceforge.net/xsd/module" xmlns:B="http://waters.sourceforge.net/xsd/base" Name="Buffer">
+<B:Comment>Exemplos de Buffers utilizando Guardas e Ações. Nesse módulo há o Buffer com 2 estados e 4 transições e o Buffer_Min, uma forma minimizada do buffer com 1 estado e 2 transições.</B:Comment>
+<EventDeclList>
+<EventDecl Kind="PROPOSITION" Name=":accepting"/>
+<EventDecl Kind="CONTROLLABLE" Name="get"/>
+<EventDecl Kind="CONTROLLABLE" Name="put"/>
+</EventDeclList>
+<ComponentList>
+<VariableComponent Name="item_qty">
+<VariableRange><BinaryExpression Operator="..">
+<IntConstant Value="0"/>
+<IntConstant Value="3"/>
+</BinaryExpression>
+</VariableRange>
+<VariableInitial><BinaryExpression Operator="==" Text="item_qty == 0">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="0"/>
+</BinaryExpression>
+</VariableInitial>
+<VariableMarking>
+<SimpleIdentifier Name=":accepting"/>
+<BinaryExpression Operator="==" Text="item_qty == 0">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="0"/>
+</BinaryExpression>
+</VariableMarking>
+</VariableComponent>
+<SimpleComponent Kind="PLANT" Name="Buffer_Min">
+<Graph>
+<NodeList>
+<SimpleNode Initial="true" Name="S0">
+<EventList>
+<SimpleIdentifier Name=":accepting"/>
+</EventList>
+<PointGeometry>
+<Point X="-592" Y="112"/>
+</PointGeometry>
+<InitialArrowGeometry>
+<Point X="-24" Y="1"/>
+</InitialArrowGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="9" Y="-10"/>
+</LabelGeometry>
+</SimpleNode>
+</NodeList>
+<EdgeList>
+<Edge Source="S0" Target="S0">
+<LabelBlock>
+<SimpleIdentifier Name="get"/>
+<LabelGeometry Anchor="NW">
+<Point X="-4" Y="10"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="-605" Y="66"/>
+</SplineGeometry>
+<GuardActionBlock>
+<Guards>
+<BinaryExpression Operator="&gt;" Text="item_qty &gt; 0">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="0"/>
+</BinaryExpression>
+</Guards>
+<Actions>
+<BinaryExpression Operator="-=" Text="item_qty -= 1">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="1"/>
+</BinaryExpression>
+</Actions>
+<LabelGeometry Anchor="NW">
+<Point X="-38" Y="-35"/>
+</LabelGeometry>
+</GuardActionBlock>
+</Edge>
+<Edge Source="S0" Target="S0">
+<LabelBlock>
+<SimpleIdentifier Name="put"/>
+<LabelGeometry Anchor="NW">
+<Point X="-17" Y="-25"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="-576" Y="156"/>
+</SplineGeometry>
+<GuardActionBlock>
+<Guards>
+<BinaryExpression Operator="&lt;" Text="item_qty &lt; 3">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="3"/>
+</BinaryExpression>
+</Guards>
+<Actions>
+<BinaryExpression Operator="+=" Text="item_qty += 1">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="1"/>
+</BinaryExpression>
+</Actions>
+<LabelGeometry Anchor="NW">
+<Point X="-41" Y="2"/>
+</LabelGeometry>
+</GuardActionBlock>
+</Edge>
+</EdgeList>
+</Graph>
+</SimpleComponent>
+<SimpleComponent Kind="PLANT" Name="Buffer">
+<Graph>
+<NodeList>
+<SimpleNode Initial="true" Name="S0">
+<EventList>
+<SimpleIdentifier Name=":accepting"/>
+</EventList>
+<PointGeometry>
+<Point X="-688" Y="64"/>
+</PointGeometry>
+<InitialArrowGeometry>
+<Point X="-27" Y="2"/>
+</InitialArrowGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="-10" Y="7"/>
+</LabelGeometry>
+</SimpleNode>
+<SimpleNode Name="S1">
+<PointGeometry>
+<Point X="-560" Y="64"/>
+</PointGeometry>
+<LabelGeometry Anchor="NW">
+<Point X="6" Y="6"/>
+</LabelGeometry>
+</SimpleNode>
+</NodeList>
+<EdgeList>
+<Edge Source="S1" Target="S0">
+<LabelBlock>
+<SimpleIdentifier Name="get"/>
+<LabelGeometry Anchor="NW">
+<Point X="-9" Y="0"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="-624" Y="80"/>
+</SplineGeometry>
+<GuardActionBlock>
+<Guards>
+<BinaryExpression Operator="&gt;" Text="item_qty  &gt; 0">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="0"/>
+</BinaryExpression>
+</Guards>
+<Actions>
+<BinaryExpression Operator="-=" Text="item_qty -= 1">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="1"/>
+</BinaryExpression>
+</Actions>
+<LabelGeometry Anchor="NW">
+<Point X="-33" Y="17"/>
+</LabelGeometry>
+</GuardActionBlock>
+</Edge>
+<Edge Source="S0" Target="S1">
+<LabelBlock>
+<SimpleIdentifier Name="put"/>
+<LabelGeometry Anchor="NW">
+<Point X="-8" Y="-57"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="-624" Y="48"/>
+</SplineGeometry>
+<GuardActionBlock>
+<Guards>
+<BinaryExpression Operator="&lt;" Text="item_qty &lt; 3">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="3"/>
+</BinaryExpression>
+</Guards>
+<Actions>
+<BinaryExpression Operator="+=" Text="item_qty += 1">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="1"/>
+</BinaryExpression>
+</Actions>
+<LabelGeometry Anchor="NW">
+<Point X="-31" Y="-42"/>
+</LabelGeometry>
+</GuardActionBlock>
+</Edge>
+<Edge Source="S1" Target="S1">
+<LabelBlock>
+<SimpleIdentifier Name="put"/>
+<LabelGeometry Anchor="NW">
+<Point X="22" Y="6"/>
+</LabelGeometry>
+</LabelBlock>
+<GuardActionBlock>
+<Guards>
+<BinaryExpression Operator="&lt;" Text="item_qty &lt; 3">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="3"/>
+</BinaryExpression>
+</Guards>
+<Actions>
+<BinaryExpression Operator="+=" Text="item_qty += 1">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="1"/>
+</BinaryExpression>
+</Actions>
+<LabelGeometry Anchor="NW">
+<Point X="0" Y="20"/>
+</LabelGeometry>
+</GuardActionBlock>
+</Edge>
+<Edge Source="S0" Target="S0">
+<LabelBlock>
+<SimpleIdentifier Name="get"/>
+<LabelGeometry Anchor="NW">
+<Point X="-46" Y="-2"/>
+</LabelGeometry>
+</LabelBlock>
+<SplineGeometry>
+<Point X="-736" Y="34"/>
+</SplineGeometry>
+<GuardActionBlock>
+<Guards>
+<BinaryExpression Operator="&gt;" Text="item_qty &gt; 0">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="0"/>
+</BinaryExpression>
+</Guards>
+<Actions>
+<BinaryExpression Operator="-=" Text="item_qty -= 1">
+<SimpleIdentifier Name="item_qty"/>
+<IntConstant Value="1"/>
+</BinaryExpression>
+</Actions>
+<LabelGeometry Anchor="NW">
+<Point X="-70" Y="15"/>
+</LabelGeometry>
+</GuardActionBlock>
+</Edge>
+</EdgeList>
+</Graph>
+</SimpleComponent>
+</ComponentList>
+</Module>
