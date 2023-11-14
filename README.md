@@ -36,7 +36,7 @@ Minitutorial sobre como usar o Supremica.
 </p>
 
 
-      Sobre a figura acima, os nós são os estados, enquanto que as setas representam os eventos. Em essência, um autômato é uma abstração matemática que descreve um sistema que passa de um estado para outro em resposta a um conjunto de regras.
+  Sobre a figura acima, os nós são os estados, enquanto que as setas representam os eventos. Em essência, um autômato é uma abstração matemática que descreve um sistema que passa de um estado para outro em resposta a um conjunto de regras.
 
 5. Autômato Finito Extendido:\
     Um outro tipo de autômato que utiliza do conceito de __guardas__ e __ações__ para ler e atualizar variáveis enquanto executa transições. Guardas são utilizados para permitir um evento sobre certas condições, já uma ação é o ato de mudar o estado de determinada variável.
@@ -57,14 +57,17 @@ Minitutorial sobre como usar o Supremica.
 2. **Crie uma Automato**.
    - Clique em `Create > New Automaton`
    - Digite o nome do automato 
-   - Escolha o tipo (Kind) do automato como Planta (Plant).
+   - Escolha o tipo (*Kind*) do automato como Planta (*Plant*).
    - Clique em `OK`
 
 3. **Adicione estados e transições:**
-   - Para adicionar um estado, clique no botao `circulo preto` do menu superior e clique nos pontos da malha quadriculada onde você deseja colocar os estados.
-   - Para adicionar uma transição primeiro clique no botao `circulo-seta-circulo`, perto do botao de colocar estados, depois clique no primeiro estado (estado inicial) e arraste a seta que aparecer até um outro estado (estado final).
-   - Você também pode adicionar uma transição para o mesmo estado clicando duas vezes no mesmo estado.
+   - Para adicionar um estado, clique no botão `circulo preto` do menu superior e clique nos pontos da malha quadriculada onde você deseja colocar os estados.
+   - Para adicionar uma transição primeiro clique no botao `circulo-seta-circulo`, perto do botao de colocar estados, depois clique no primeiro estado (estado inicial) e arraste a seta que aparecer até um outro estado destino.
+   - Você também pode adicionar uma transição para o mesmo estado ao clicar.
 
+<p align="center">
+  <img src="./imagens/botoes.png" alt="botoes_supremica"/>
+</p>
 4. **Defina os estados marcados:**
    - Para definir os estados marcados, clique com **botão direito** no estado que você deseja marcar, selecione `Marking`, e por fim `accepting` (aceitação) ou `forbidden` (proibido).
 
@@ -82,5 +85,9 @@ Minitutorial sobre como usar o Supremica.
    4. Para adicionar a guarda coloque a condição a ser satisfeita para que a transição ocorra na primeira caixa de texto. A condição pode ser a de uma variável alcançar um determinado valor.
    5. Para adicionar uma Ação, adicione uma operação na segunda caixa de texto. Pode ser a atribuição de um valor a uma variável, por exemplo, e clique em `OK`.
 
-## Autômato Finito Extendido no Supremica
+<p align="center">
+  <img src="./imagens/guardas.png" alt="guardas_supremica"/>
+</p>
+
+## Aproximação de um Autômato Finito Extendido no Supremica
    - Para criar uma automato estendido no supremica, crie um automato e adicione guardas, ações e variáveis, como descrito anteriormente.
