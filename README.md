@@ -66,7 +66,7 @@ O estado de algo pode ser uma variável e seus valores são mudadas pelas açõe
 3. **Adicione estados e transições:**
    - Para adicionar um estado, clique no `botão 2`, que contém um imagem de  circulo preto do menu superior e clique nos pontos da malha quadriculada onde você deseja colocar os estados.
    - Para adicionar uma transição primeiro clique no `botão 4 `, após isso clique no primeiro estado (estado inicial) e arraste a seta que aparecer até um outro estado destino.
-   - Você também pode adicionar uma transição para o mesmo estado ao clicar.
+   - Você também pode adicionar uma transição para o mesmo estado ao clicar duas vezes.
 
 <p align="center">
   <img src="./imagens/botoes.png" alt="botoes_supremica"/>
