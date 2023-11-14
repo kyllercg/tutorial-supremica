@@ -4,7 +4,7 @@ Nesse exemplo encontramos no autômato com partes Acessíveis e Coacessíveis. U
 
 
 <p align="center">
-  <img src="./../../imagens/autOmato_deadlock.png" alt="deadlock_e_livelock"/>
+  <img src="./../../imagens/automato_deadlock.png" alt="deadlock_e_livelock"/>
 </p>
 
 
