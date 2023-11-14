@@ -2,8 +2,7 @@
 Minitutorial sobre como usar o Supremica.
 
 ## O que é o Supremica?
-
-## Instalação
+Supremica é um software voltado para Sistemas Discretos, mais especificadamente para a criação e implementação de modelos de máquinas de estados finitas. Além disso pode ser aplicado teoria de controlabilidade com supervisório.
 
 > Windows
 >
@@ -61,13 +60,14 @@ Minitutorial sobre como usar o Supremica.
    - Clique em `OK`
 
 3. **Adicione estados e transições:**
-   - Para adicionar um estado, clique no botão `circulo preto` do menu superior e clique nos pontos da malha quadriculada onde você deseja colocar os estados.
-   - Para adicionar uma transição primeiro clique no botao `circulo-seta-circulo`, perto do botao de colocar estados, depois clique no primeiro estado (estado inicial) e arraste a seta que aparecer até um outro estado destino.
+   - Para adicionar um estado, clique no `botão 2`, que contém um imagem de  circulo preto do menu superior e clique nos pontos da malha quadriculada onde você deseja colocar os estados.
+   - Para adicionar uma transição primeiro clique no `botão 4 `, após isso clique no primeiro estado (estado inicial) e arraste a seta que aparecer até um outro estado destino.
    - Você também pode adicionar uma transição para o mesmo estado ao clicar.
 
 <p align="center">
   <img src="./imagens/botoes.png" alt="botoes_supremica"/>
 </p>
+
 4. **Defina os estados marcados:**
    - Para definir os estados marcados, clique com **botão direito** no estado que você deseja marcar, selecione `Marking`, e por fim `accepting` (aceitação) ou `forbidden` (proibido).
 
