@@ -57,10 +57,10 @@ O estado de algo pode ser uma variável e seus valores são mudadas pelas açõe
 1. **Crie um módulo:**
    - Abra o Supremica e clique em `File > New `
 
-2. **Crie uma Automato**.
+2. **Crie um Autômato**.
    - Clique em `Create > New Automaton`
-   - Digite o nome do automato 
-   - Escolha o tipo (*Kind*) do automato como Planta (*Plant*).
+   - Digite o nome do autômato 
+   - Escolha o tipo (*Kind*) do aut[ô](https://i.imgur.com/VgZ4kda.jpg)mato como Planta (*Plant*).
    - Clique em `OK`
 
 3. **Adicione estados e transições:**
@@ -84,7 +84,7 @@ O estado de algo pode ser uma variável e seus valores são mudadas pelas açõe
 
 - Para adicionar Guardas e Ações em um autômato, você precisa seguir os seguintes passos:
    1. Abra o software Supremica e crie um novo modelo de autômato.
-   2. Adicione os estados e as transições do automato.
+   2. Adicione os estados e as transições do autômato.
    3. Clique duas vezes na transição em que você deseja adicionar a guarda.
    4. Para adicionar a guarda coloque a condição a ser satisfeita para que a transição ocorra na primeira caixa de texto. A condição pode ser a de uma variável alcançar um determinado valor.
    5. Para adicionar uma Ação, adicione uma operação na segunda caixa de texto. Pode ser a atribuição de um valor a uma variável, por exemplo, e clique em `OK`.
@@ -94,4 +94,4 @@ O estado de algo pode ser uma variável e seus valores são mudadas pelas açõe
 </p>
 
 ## Aproximação de um Autômato Finito Extendido no Supremica
-   - Para criar uma automato estendido no supremica, crie um automato e adicione guardas, ações e variáveis, como descrito anteriormente.
+   - Para criar uma autômato estendido no supremica, crie um autômato e adicione guardas, ações e variáveis, como descrito anteriormente.
