@@ -7,7 +7,7 @@ Supremica é um software voltado para Sistemas a Eventos Discretos (SED), mais e
 
 ## Instalação
 
-Na [seção de downloads](https://supremica.org/download-2/) do Supr[e](https://i.imgur.com/pY0p7Ju.png)mica, existirá um redirecionamento para um site da [Universidade de Waikato](https://www.cs.waikato.ac.nz/~robi/download_waters/), em que 
+Na [seção de downloads](https://supremica.org/download-2/) do Supremica, existirá um redirecionamento para um site da [Universidade de Waikato](https://www.cs.waikato.ac.nz/~robi/download_waters/), em que 
 
 Uma versão do Java (minimamente a versão 8) já deve estar instalada
 no sistema, bem como se certificar que o executável do Java esteja no
@@ -80,7 +80,7 @@ O estado de algo pode ser uma variável e seus valores são mudadas pelas açõe
 
 ## Guardas e Ações no Supremica
 
-- As Guardas e Ações são elementos fundamentais na modelagem de sistemas de eventos discretos. As guardas são condições que devem ser satisfeitas para que uma transição ocorra, enquanto as ações são as operações que ocorrem quando uma transição é disparada.
+- As Guardas e Ações são elementos fundamentais na modelagem de sistemas de eventos discretos[.](https://i.imgur.com/pY0p7Ju.png) As guardas são condições que devem ser satisfeitas para que uma transição ocorra, enquanto as ações são as operações que ocorrem quando uma transição é disparada.
 
 - Para adicionar Guardas e Ações em um autômato, você precisa seguir os seguintes passos:
    1. Abra o software Supremica e crie um novo modelo de autômato.
