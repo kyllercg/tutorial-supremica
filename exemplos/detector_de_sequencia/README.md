@@ -4,8 +4,7 @@ Nesse exemplo encontra-se um modelo de uma máquina de estados finito que lê di
 
 Para a implementação, os eventos do conjunto foram nomeados como $E$ = \{D1,D2,D3} criando e seus estados {S0,S1,S2,S3}, sendo S3 o estado marcado de identificação da sequência.
 
-<div align="center">
 
-![detector_de_sequencia](./../../imagens/detector_de_sequencia.png)
-
-<div>
+<p align="center">
+  <img src="./../../imagens/detector_de_sequencia.png" alt="deadlock_e_livelock"/>
+</p>
