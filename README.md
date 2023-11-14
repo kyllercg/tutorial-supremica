@@ -7,7 +7,7 @@ Supremica é um software voltado para Sistemas a Eventos Discretos (SED), mais e
 
 ## Instalação
 
-Na [seção de downloads](https://supremica.org/download-2/) do Supremica, existirá um redirecionamento para um site da [Universidade de Waikato](https://www.cs.waikato.ac.nz/~robi/download_waters/), em que 
+Na [seção de downloads](https://supremica.org/download-2/) do Supr[e](https://i.imgur.com/pY0p7Ju.png)mica, existirá um redirecionamento para um site da [Universidade de Waikato](https://www.cs.waikato.ac.nz/~robi/download_waters/), em que 
 
 Uma versão do Java (minimamente a versão 8) já deve estar instalada
 no sistema, bem como se certificar que o executável do Java esteja no
