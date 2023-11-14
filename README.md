@@ -4,11 +4,17 @@ Minitutorial sobre como usar o Supremica.
 ## O que é o Supremica?
 Supremica é um software voltado para Sistemas Discretos, mais especificadamente para a criação e implementação de modelos de máquinas de estados finitas. Além disso pode ser aplicado teoria de controlabilidade com supervisório.
 
-> Windows
->
 
-> Linux
-> 
+## Instalação
+
+Na [seção de downloads](https://supremica.org/download-2/) do Supremica, existirá um redirecionamento para um site da [Universidade de Waikato](https://www.cs.waikato.ac.nz/~robi/download_waters/), em que 
+
+Uma versão do Java (minimamente a versão 8) já deve estar instalada
+no sistema, bem como se certificar que o executável do Java esteja no
+PATH do Windows/Linux.
+Também é recomendável que seja instalado o
+[GraphViz](http://www.graphviz.org/) para a funcionalidade completa
+do analisador.
 
 ## Conceitos introdutórios
 
